@@ -1,11 +1,9 @@
 import React, {useState} from "react";
-import { Div, Image, Container, Button, Anchor, scrollTo } from "atomize"
-import logo from "../images/logo.png"
-import { useNavigate } from "react-router";
-import { SignedIn, SignedOut } from "@clerk/clerk-react/dist/components";
-const Header = () => {
-  const navigate = useNavigate()
+import { Div, Image, Container, Icon, Anchor, scrollTo } from "atomize"
+import logo from "../../images/logo.png"
+import { UserButton } from "@clerk/clerk-react/dist/components";
 
+const ExplorerHeader = () => {
     const [showMobileHeaderMenu, setshowMobileHeaderMenu] = useState(false)
 
     const ToggleHeaderMenu = value => {
@@ -109,19 +107,10 @@ const Header = () => {
               }}
               transition
             >
-              <Anchor
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-                textWeight="500"
-                textColor="medium"
-                hoverTextColor="black"
-                transition
-                onClick={() => scrollTo("#features")}
-              >
-                Features
-              </Anchor>
+             
 
               <Anchor
-                href="https://github.com/nicholasohjj/lifehack"
+                href="./docs"
                 target="_blank"
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
@@ -129,46 +118,13 @@ const Header = () => {
                 hoverTextColor="black"
                 transition
               >
-                Github
+              Get Help
               </Anchor>
-              <Anchor
-                href="https://github.com/nicholasohjj/lifehack"
-                target="_blank"
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-                textWeight="500"
-                textColor="medium"
-                hoverTextColor="black"
-                transition
-              >
-                Github
-              </Anchor>
-                
-                <Button
-                onClick ={()=>navigate('/docs')}
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
+              
+              <UserButton/>
 
-                  bg="gray300"
-                  hoverBg="gray400"
-                  textColor="medium"
-                  w={{ xs: "100%", sm: "8.5rem" }}
-                  rounded="lg"
-                  style={{ letterSpacing: "-0.5px" }}
-                >
-                  Documentation
-                </Button>
-                <Button
-                onClick ={()=>navigate('/login')}
-                  bg="info700"
-                  hoverBg="info800"
-                  textColor="white"
-                  w={{ xs: "100%", sm: "8.5rem" }}
-                  rounded="lg"
-                  style={{ letterSpacing: "-0.5px" }}
-                >
-                  <SignedIn>Dashboard</SignedIn>
-                  <SignedOut>Login</SignedOut>
-                </Button>
             </Div>
+            
           </Container>
         </Div>
         </>
@@ -176,4 +132,4 @@ const Header = () => {
 
 }
 
-export default Header
+export default ExplorerHeader

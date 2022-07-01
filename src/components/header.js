@@ -128,7 +128,7 @@ const Header = () => {
               >
                 Github
               </Anchor>
-              <a href="/docs/react/intro">
+              <a href="/docs">
                 <Button
                   bg="gray300"
                   hoverBg="gray400"

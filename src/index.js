@@ -3,6 +3,8 @@ import App from './App';
 import { Provider as StyletronProvider, DebugEngine } from "styletron-react";
 import { Client as Styletron } from "styletron-engine-atomic";
 import { ThemeProvider, StyleReset } from 'atomize';
+import { BrowserRouter } from "react-router-dom";
+
 
 
 const debug =
@@ -19,12 +21,13 @@ const theme = {
 };
 
 ReactDOM.render(
+  <BrowserRouter>
   <StyletronProvider value={engine} debug={debug} debugAfterHydration>
     <ThemeProvider theme={theme}>
     <StyleReset/>
     <App />
     </ThemeProvider>
-
-  </StyletronProvider>,
+  </StyletronProvider>
+  </BrowserRouter>,
   document.getElementById('root'),
 );

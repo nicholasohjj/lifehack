@@ -34,7 +34,7 @@ const Title = () => {
               justify="center"
               flexDir={{ xs: "column", sm: "row" }}
             >
-                <a href="/docs/react/intro">
+                <a href="/login">
                 <Button
                   h="3rem"
                   w={{ xs: "100%", sm: "11rem" }}

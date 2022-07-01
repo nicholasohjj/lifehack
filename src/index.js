@@ -1,15 +1,30 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import { Provider as StyletronProvider, DebugEngine } from "styletron-react";
+import { Client as Styletron } from "styletron-engine-atomic";
+import { ThemeProvider, StyleReset } from 'atomize';
+
+
+const debug =
+  process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
+
+// 1. Create a client engine instance
+const engine = new Styletron();
+
+const theme = {
+  colors: {
+    primary: 'tomato',
+    accent: 'yellow',
+  },
+};
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StyletronProvider value={engine} debug={debug} debugAfterHydration>
+    <ThemeProvider theme={theme}>
+    <StyleReset/>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    </ThemeProvider>
 
-reportWebVitals(sendToVercelAnalytics);
+  </StyletronProvider>,
+  document.getElementById('root'),
+);

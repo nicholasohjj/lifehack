@@ -25,7 +25,7 @@ const Home = () => {
 }
 
 const Login = () => {
-  const frontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
+  const frontendApi = "clerk.quiet.tuna-4.lcl.dev"
   const navigate = useNavigate();
 
   return (

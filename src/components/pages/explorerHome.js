@@ -3,8 +3,10 @@ import {
     SignedIn,
     SignedOut,
     RedirectToSignIn,
+    useUser
   } from "@clerk/clerk-react";
 import ExplorerHeader from "../explorer/explorerHeader";
+import Welcome from "../explorer/welcome";
 
 
 
@@ -14,9 +16,10 @@ const ExplorerHome = () => {
       <>
       <SignedIn>
       <ExplorerHeader/>
+      <Welcome />
       </SignedIn>
       <SignedOut>
-        <RedirectToSignIn/>
+      <meta http-equiv = "refresh" content = "0; url = /" />
       </SignedOut>
       </>
     )

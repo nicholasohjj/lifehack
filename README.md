@@ -1,31 +1,45 @@
-# Create React App
+<p align="center">
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+  <a href="https://csrejects.vercel.app" target="_blank">
+    <img alt="logo" height="70" alt="Logo" src=""/>
+  </a>
+</p>
+<p align="center">
+    <a href="https://app.vercel.app/docs/">Docs</a>
+</p>
 
-## Deploy Your Own
+Product Name is an open‑source development tool. It helps 
 
-Deploy your own Create React App project with Vercel.
+Product Name ....
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+# Features
 
-_Live Example: https://create-react-template.vercel.app/_
+Build database applications with:
 
-## Available Scripts
+- 
 
-In the project directory, you can run:
+# Getting Started
 
-### `npm start`
+You can get started with Amplication immediately on the Amplication Cloud. 
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Alternatively you can set up a local development environment.
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+See [Amplication website](http://amplication.com/) or [Amplication docs](http://docs.amplication.com/) for more details.
 
-### `npm test`
+[Watch this video](https://youtu.be/tKGeLXoPr94) for a quick recap of everything you get with Amplication.
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Setting Up Amplication Manually
 
-Builds the app for production to the `build` folder.
+You can use a manual step-by-step approach to set up Amplication in a local development environment. To do that, you should follow the following instructions for **Setting Up Amplication Server**, and **Setting Up Amplication Client**.
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+#### Setting up 
+
+Amplication Server is the main component of the platform that provides all the core functionality to design and create low-code applications.
+The server exposes a GraphQL API for all actions. The server is built with the following awesome open-source technologies: Node.js, NestJS, Prisma over PostgreSQL, GraphQL API, and many more...
+
+# Beta version
+
+Amplication is currently in Beta version. This means that we are still working on essential features like production-ready hosting, migrations, and stability to our console.
+
+How does it affect you? Well... mostly it doesn't. Every app generated using Amplication platform contains popular, documented, secured, and supported production-ready open-source components & packages. Your app is stable, scalable, and production-ready you can deploy and rely on. You can read more about the generated app and its stack here https://docs.amplication.com/docs/getting-started

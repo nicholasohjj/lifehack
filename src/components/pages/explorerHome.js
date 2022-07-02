@@ -8,8 +8,8 @@ import ExplorerHeader from "../explorer/explorerHeader";
 import Welcome from "../explorer/welcome";
 import Data from "../explorer/data";
 import Footer from "../footer"
-import Introducing from "../frontpage/introducing";
 import { Div } from "atomize";
+import Postcards from "../explorer/postcards";
 
 
 const ExplorerHome = () => {
@@ -20,8 +20,8 @@ const ExplorerHome = () => {
       <SignedIn>
       <ExplorerHeader/>
       <Welcome />
+      <Postcards />
       <Data />
-      <Introducing />
       <Footer />
       </SignedIn>
       <SignedOut>

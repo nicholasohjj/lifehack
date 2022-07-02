@@ -1,10 +1,13 @@
 import React, {useState} from "react";
-import { Div, Image, Container, Icon, Anchor, scrollTo, Text } from "atomize"
+import { Div, Image, Container, Icon, Anchor, Button, scrollTo, Text } from "atomize"
 import logo from "../../images/logo.png"
 import { UserButton } from "@clerk/clerk-react/dist/components";
+import { useClerk } from "@clerk/clerk-react";
 
 const ExplorerHeader = () => {
     const [showMobileHeaderMenu, setshowMobileHeaderMenu] = useState(false)
+
+    const {signOut} = useClerk()
 
     const ToggleHeaderMenu = value => {
         setshowMobileHeaderMenu(value)
@@ -120,9 +123,19 @@ const ExplorerHeader = () => {
               >
               Get Help
               </Anchor>
-              
-              <UserButton/>
-
+              <Button
+                onClick ={()=>signOut()}
+                  bg="success700"
+                  hoverBg="environment"
+                  m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
+                  textColor="white"
+                  w={{ xs: "100%", sm: "8.5rem" }}
+                  rounded="lg"
+                  style={{ letterSpacing: "-0.5px" }}
+                >
+                  Sign Out
+                </Button>
+                <UserButton/>
             </Div>
             
           </Container>

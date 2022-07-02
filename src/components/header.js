@@ -154,7 +154,7 @@ const Header = () => {
                   style={{ letterSpacing: "-0.5px" }}
                 >
                   <SignedIn>Dashboard</SignedIn>
-                  <SignedOut>Login</SignedOut>
+                  <SignedOut>Sign In</SignedOut>
                 </Button>
             </Div>
           </Container>

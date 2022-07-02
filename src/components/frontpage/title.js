@@ -9,10 +9,11 @@ const Title = () => {
             <Container d="flex" flexDir="column" align="center">
             <Text
               tag="h1"
+              textColor="primary"
               textWeight="500"
               textAlign="center"
               textSize="display3"
-              fontFamily="secondary"
+              fontFamily="primary"
               m={{ b: "1rem" }}
             >
               Product Name
@@ -23,8 +24,8 @@ const Title = () => {
               maxW="36rem"
               textSize="subheader"
               textAlign="center"
-              fontFamily="secondary"
-              textColor="medium"
+              fontFamily="primary"
+              textColor="primary"
               m={{ b: "2.5rem" }}
             >
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -39,8 +40,8 @@ const Title = () => {
                 <Button
                   h="3rem"
                   w={{ xs: "100%", sm: "11rem" }}
-                  bg="info700"
-                  hoverBg="info600"
+                  bg="success700"
+                  hoverBg="environment"
                   rounded="lg"
                   m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
                 >
@@ -63,10 +64,10 @@ const Title = () => {
                   hoverBg="gray200"
                   border="1px solid"
                   borderColor="gray400"
+                  textColor="primary"
                   hoverBorderColor="gray600"
                   rounded="lg"
                   p={{ l: "0.5rem", r: "1rem" }}
-                  textColor="medium"
                   prefix={
                     <Icon
                       name="Play"

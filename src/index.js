@@ -15,9 +15,15 @@ const engine = new Styletron();
 
 const theme = {
   colors: {
-    primary: 'tomato',
+    primary: 'white',
+    environment: '#68d391',
+    givingback: '#f687b3',
+    safety: '#f6e05e',
     accent: 'yellow',
   },
+  fontFamily: {
+    primary: "monospace",
+  }
 };
 
 ReactDOM.render(

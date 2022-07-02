@@ -35,14 +35,16 @@ const Introducing = () => {
         <Text
             textSize="display1"
             textWeight="500"
-            fontFamily="secondary"
+            textColor="primary"
+            fontFamily="primary"
             m={{ b: "1rem" }}
           >
             Why use Product Name?
           </Text>
           <Text
             textSize="subheader"
-            textColor="medium"
+            textColor="primary"
+            fontFamily="primary"
             maxW="30rem"
             m={{ b: "3rem" }}
           >
@@ -77,6 +79,7 @@ const Introducing = () => {
                         />
                         <Text
                           textSize="title"
+                          textColor="primary"
                           textWeight="500"
                           m={{ b: "1rem" }}
                         >
@@ -84,7 +87,7 @@ const Introducing = () => {
                         </Text>
                         <Text
                           textSize="subheader"
-                          textColor="medium"
+                          textColor="primary"
                           m={{ b: "2rem" }}
                         >
                           {item.subheading}

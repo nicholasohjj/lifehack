@@ -25,6 +25,7 @@ const Footer = () => {
         <Div d="flex" align="center" justify="center" flexDir="column">
         <Text
             tag="h2"
+            textColor="primary"
             textWeight="400"
             textSize="body"
             textAlign="center"
@@ -34,6 +35,7 @@ const Footer = () => {
           </Text>
           <Text
             tag="h2"
+            textColor="primary"
             textWeight="400"
             textSize="body"
             textAlign="center"
@@ -47,7 +49,7 @@ const Footer = () => {
                 <Icon
                   name={link.icon}
                   size="20px"
-                  hoverColor="info800"
+                  hoverColor="white"
                   m={{ r: index !== mediaLinks.length - 1 && "1rem" }}
                   cursor="pointer"
                 />

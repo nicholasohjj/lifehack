@@ -119,18 +119,6 @@ const Header = () => {
               >
                 Features
               </Anchor>
-
-              <Anchor
-                href="https://github.com/nicholasohjj/lifehack"
-                target="_blank"
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-                textWeight="500"
-                textColor="medium"
-                hoverTextColor="black"
-                transition
-              >
-                Github
-              </Anchor>
               <Anchor
                 href="https://github.com/nicholasohjj/lifehack"
                 target="_blank"
@@ -158,8 +146,8 @@ const Header = () => {
                 </Button>
                 <Button
                 onClick ={()=>navigate('/login')}
-                  bg="info700"
-                  hoverBg="info800"
+                  bg="success700"
+                  hoverBg="environment"
                   textColor="white"
                   w={{ xs: "100%", sm: "8.5rem" }}
                   rounded="lg"

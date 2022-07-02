@@ -1,6 +1,6 @@
 import React from "react";
 import { Div, Anchor, Icon, Button, Container, Text } from "atomize";
-
+import { WithUser } from "@clerk/clerk-react";
 const Welcome = () => {
     return (
         <>
@@ -10,11 +10,19 @@ const Welcome = () => {
               tag="h1"
               textWeight="500"
               textAlign="center"
-              textSize="display3"
-              fontFamily="secondary"
+              textSize="display2"
+              fontFamily="primary"
               m={{ b: "1rem" }}
             >
-              Welcome Back!
+              <WithUser>
+        {(user) => (
+          <div>
+            {user.firstName 
+              ? `Hello, ${user.firstName}!` 
+              : "Hello there!"}
+          </div>
+        )}
+      </WithUser>
             </Text>
             </Container>
         </Div>

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Div, Image, Container, Icon, Anchor, scrollTo } from "atomize"
+import { Div, Image, Container, Icon, Anchor, scrollTo, Text } from "atomize"
 import logo from "../../images/logo.png"
 import { UserButton } from "@clerk/clerk-react/dist/components";
 
@@ -36,12 +36,12 @@ const ExplorerHeader = () => {
           ></Div>
             <Container d="flex" align="center" justify="space-between">
             <Div cursor="pointer">
-            <Image
-                src={logo}
-                alt="atomize design system logo"
-                h="18px"
-                w="auto"
-              />
+
+            <Anchor href="./">
+              Back to Homepage
+            </Anchor>
+              
+              
             
             </Div>
             

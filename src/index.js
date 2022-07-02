@@ -16,6 +16,7 @@ const engine = new Styletron();
 const theme = {
   colors: {
     primary: 'white',
+    background: '#002f63',
     environment: '#68d391',
     givingback: '#f687b3',
     safety: '#f6e05e',

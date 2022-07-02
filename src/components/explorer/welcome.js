@@ -11,6 +11,7 @@ const Welcome = () => {
               textWeight="500"
               textAlign="center"
               textSize="display2"
+              textColor = "primary"
               fontFamily="primary"
               m={{ b: "1rem" }}
             >

@@ -1,5 +1,6 @@
 import React from "react";
 import { Div, Anchor, Icon, Button, Container, Text } from "atomize";
+import { SignedIn, SignedOut } from "@clerk/clerk-react/dist/components";
 
 const Title = () => {
     return (
@@ -43,7 +44,12 @@ const Title = () => {
                   rounded="lg"
                   m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
                 >
-                  Get Started
+                  <SignedIn>
+                    Go to Dashboard
+                  </SignedIn>
+                  <SignedOut>
+                    Get Started
+                  </SignedOut>
                 </Button>
               </a>
               <Anchor

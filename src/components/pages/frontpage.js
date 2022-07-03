@@ -8,6 +8,7 @@ import { Div } from "atomize"
 const Frontpage = ({user}) => {
     return (
       <>
+
       <Div bg="background">
       <Header user = {user}/>
       <Title />

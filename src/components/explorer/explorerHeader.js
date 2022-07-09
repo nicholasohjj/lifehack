@@ -111,17 +111,27 @@ const ExplorerHeader = () => {
               transition
             >
              
-
-              <Anchor
-                href="./docs"
-                target="_blank"
+             <Anchor
+                href="./personal"
+                target=""
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
                 hoverTextColor="black"
                 transition
               >
-              Get Help
+              Personal Donation
+              </Anchor>
+              <Anchor
+                href="./corporate"
+                target=""
+                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
+                textWeight="500"
+                textColor="medium"
+                hoverTextColor="black"
+                transition
+              >
+              Corporate Donation
               </Anchor>
               <Button
                 onClick ={()=>signOut()}

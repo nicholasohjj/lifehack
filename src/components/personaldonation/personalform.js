@@ -20,7 +20,8 @@ const PersonalForm = ({setallListings}) => {
         user_type: "personal",
         item_name: newitem ? newitem: "nil",
         item_description: newdescription ? newdescription: "Not Specified",
-        item_location: newlocation ? newlocation: "Not specified"
+        item_location: newlocation ? newlocation: "Not specified",
+        item_reserved: false
       }
 
       console.log(newListing)

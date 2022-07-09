@@ -16,7 +16,7 @@ const Title = () => {
               fontFamily="primary"
               m={{ b: "1rem" }}
             >
-              Product Name
+              foodise
             </Text>
             <Text
               tag="h2"

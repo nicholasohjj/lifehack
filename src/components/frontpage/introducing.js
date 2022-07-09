@@ -4,27 +4,22 @@ import logo from "../../images/logo.png"
 const list = [
     {
       icon: logo,
-      heading: "Plug In",
-      subheading: "Charge automatically - simply plug in to our charging platforms after registering with us.",
+      heading: "Donate",
+      subheading: "Have extra food? Don't let it go to waste! Donate your food for the greater cause right now!",
     },
     {
       icon: logo,
-      heading: "Fast Charging",
-      subheading: "Equipped with a 20MW charging port, we promise to charge your ship fully within the shortest possible time.",
+      heading: "Request",
+      subheading: "We hear you, and we are here to help. Request for any food put up for donation!",
     },
   
     {
       icon: logo,
-      heading: "Monitor",
-      subheading: "Find our charging platforms easily and view your charge status in real time.",
+      heading: "Earn credits",
+      subheading: "Donate your food to earn credits that can be exchanged in other stores!",
     },
   
-    {
-      icon: logo,
-      heading: "Responsive",
-      subheading: "Better control to make the app responsive.",
-      link: "/docs/react/responsive",
-    },
+    
   ]
 
 const Introducing = () => {
@@ -39,7 +34,7 @@ const Introducing = () => {
             fontFamily="primary"
             m={{ b: "1rem" }}
           >
-            Why use Product Name?
+            What is foodise?
           </Text>
           <Text
             textSize="subheader"
@@ -48,7 +43,7 @@ const Introducing = () => {
             maxW="30rem"
             m={{ b: "3rem" }}
           >
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            foodise is a free to use bulletin board for food donors and receivers. Do you know that food waste is one of the biggest waste streams in Singapore? Around 2 bowls of rice person are wasted daily. The second best strategy to reduce food wastage is by redistributing excess food. Contribute to this great cause now by donating your excess food!
 
           </Text>
           <Div

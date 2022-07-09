@@ -113,6 +113,18 @@ const ExplorerHeader = () => {
               transition
             >
               <Button
+                onClick ={()=>navigate("/listings")}
+                  bg="brand700"
+                  hoverBg="brand800"
+                  m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
+                  textColor="black"
+                  w={{ xs: "100%", sm: "11rem" }}
+                  rounded="lg"
+                  style={{ letterSpacing: "-0.5px" }}
+                >
+                  My Listings
+                </Button>
+              <Button
                 onClick ={()=>navigate("/personal")}
                   bg="warning700"
                   hoverBg="warning800"

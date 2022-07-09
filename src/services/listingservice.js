@@ -12,14 +12,9 @@ const addNew = (newListing) => {
   return request.then(response => response.data)
 }
 
-// const removePerson = (id) => {
-//   return axios.delete(`${baseUrl}/${id}`)
-// }
+const update = (id,newListing) => {
+  const request = axios.put(`${baseUrl}/${id}`, newListing)
+  return request.then(response=>response.data)
+}
 
-// const update = (id,newPerson) => {
-//   const request = axios.put(`${baseUrl}/${id}`, newPerson)
-//   return request.then(response=>response.data)
-  
-// }
-
-export default {getAll, addNew}
+export default {getAll, addNew, update}

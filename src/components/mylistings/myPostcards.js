@@ -2,9 +2,11 @@ import React, {useState, useEffect} from "react";
 import { Div, Text, Row, Col, Container, Image } from "atomize"
 import logo from "../../images/logo.png"
 import listingservice from "../../services/listingservice";
-import ListingModal from "./listingmodal";
+import ListingModal from "../explorer/listingmodal";
+import { useUser } from "@clerk/clerk-react/dist/hooks/useUser";
 
-const Postcards = () => {
+const MyPostcards = () => {
+  const { user } = useUser();
   const [listings, setlistings] = useState([])
 
   const hook = () => {
@@ -17,6 +19,8 @@ const Postcards = () => {
   
   useEffect(hook,[])
 
+  const filteredList = listings.filter(listing => listing.user_id == user.id)
+
     return (
     <>
     <Div tag="section" id="features" p={{ t: "3rem" }}>
@@ -27,7 +31,7 @@ const Postcards = () => {
             borderColor="white"
           >
             <Row>
-              {listings.map(item => (
+              {filteredList.map(item => (
                 <Col size={{ xs: 12, sm: 6, lg: 3 }}>
                   <Div m={{ b: { xs: "1rem", lg: "0" } }}>
                     <Div
@@ -79,4 +83,4 @@ const Postcards = () => {
     )
 }
 
-export default Postcards
+export default MyPostcards

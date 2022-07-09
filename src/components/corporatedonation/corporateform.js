@@ -18,7 +18,10 @@ const Form = () => {
         user_type: "corporate",
         item_name: newitem ? newitem: "nil",
         item_description: newdescription ? newdescription: "Not Specified",
-        item_location: newlocation ? newlocation: "Not specified"
+        item_location: newlocation ? newlocation: "Not specified",
+        item_reserved: false,
+        item_reserved_person: "",
+        item_reserved_person_email: ""
       }
 
       console.log(newCorporateListing)

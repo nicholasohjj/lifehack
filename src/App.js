@@ -5,6 +5,7 @@ import ExplorerHome from "./components/pages/explorerHome";
 import Frontpage from "./components/pages/frontpage";
 import Docs from "./components/pages/docs"; 
 import CorporateDonation from "./components/pages/corporatedonation";
+import MyListings from "./components/pages/mylistings";
 import {
   ClerkProvider,
 } from "@clerk/clerk-react";
@@ -33,6 +34,8 @@ const App = () => {
       <Route path = "/home" element = {<ExplorerHome />} />
       <Route path = "/corporate" element = {<CorporateDonation />} />
       <Route path = "/personal" element = {<PersonalDonation setallListings = {setallListings} />} />
+      <Route path ="/listings" element ={<MyListings/>}/>
+
       <Route path ="/" element ={<Frontpage/>}/>
     </Routes>
     </ClerkProvider>

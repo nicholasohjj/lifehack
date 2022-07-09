@@ -1,7 +1,9 @@
 // Full Screen Modal
 import React, {useState} from "react";
-import { Div, Button, Modal, Icon, Text } from "atomize";
+import { Div, Button, Modal, Icon, Text, Image, Container} from "atomize";
 import { useNavigate } from "react-router-dom";
+import { useUser } from "@clerk/clerk-react/dist/hooks";
+import listingservice from "../../services/listingservice";
 
 const ModalSize = ({ isOpen, onClose, item }) => {
   return (
@@ -22,6 +24,7 @@ const ModalSize = ({ isOpen, onClose, item }) => {
         onClick={onClose}
         cursor="pointer"
       />
+
         <Text
                           textSize="subheader"
                           textColor="black"
@@ -29,6 +32,9 @@ const ModalSize = ({ isOpen, onClose, item }) => {
                         >
                           {item.item_name}
                         </Text>
+                        <Image src={item.item_image} maxH="20rem" maxW ="20rem"
+/>
+
                         <Text
                           textColor="black"
                           textSize="paragraph"
@@ -43,17 +49,17 @@ const ModalSize = ({ isOpen, onClose, item }) => {
                         >
                           Location: {item.item_location}
                         </Text>
+                        <Text
+                          textColor="black"
+                          textSize="paragraph"
+                          m={{ b: "1rem" }}
+                        >
+                          Reserve Status: {item.item_reserved ? `Reserved by ${item.item_reserved_person} with email ${item.item_reserved_person_email}` : "Not Reserved"} 
+                        </Text>
+                        
       <Div d="flex" justify="flex-end">
-        <Button
-          onClick={onClose}
-          bg="gray200"
-          textColor="medium"
-          m={{ r: "1rem" }}
-        >
-          Close
-        </Button>
         <Button onClick={onClose} bg="info700">
-          Get it!
+          Reserve this item!
         </Button>
       </Div>
     </Modal>
@@ -61,8 +67,31 @@ const ModalSize = ({ isOpen, onClose, item }) => {
 };
 
 const ListingModal = ({item}) => {
-    const navigate = useNavigate()
+  const { user } = useUser();
+    console.log(user.username)
     const [showModal, setshowModal] = useState(false)
+
+    const Handleclose = () => {
+
+      const newListing = {
+        user_id: item.user_id,
+        user_type: item.user_type,
+        item_name: item.item_name,
+        item_image: item.item_image,
+        item_description: item.item_description,
+        item_location: item.item_location,
+        item_reserved: true,
+        item_reserved_person: user.fullName ? user.fullName : "nil",
+        item_reserved_person_email: user.emailAddresses ? user.emailAddresses[0].emailAddress : "nil"
+    }
+    setshowModal(!showModal)
+    listingservice
+      .update(item.id,newListing)
+      .then()
+          setshowModal(false)
+
+
+    }
 
     return (
       <>
@@ -77,13 +106,7 @@ const ListingModal = ({item}) => {
         </Button>
         <ModalSize
           isOpen={showModal}
-          onClose={() => {
-            setshowModal(false)
-            setTimeout(() => {
-              navigate(`/${item.item_name}${item.item_description}`)
-
-            }, 500);
-          }}
+          onClose={Handleclose}
             
           item = {item}
         />

@@ -134,7 +134,7 @@ const DonationHeader = () => {
                   m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                   textColor="black"
                   textSize="subheader"
-                  w={{ xs: "100%", sm: "11rem" }}
+                  w={{ xs: "100%", sm: "13rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
                 >

@@ -31,7 +31,7 @@ const Footer = () => {
             textAlign="center"
             m={{ b: "1rem" }}
           >
-            A Project by Kai Xuan, Wen Kai, Sutong and Nicholas
+            A Project by Kai Xuan, Nicholas, Sutong and Wen Kai
           </Text>
           <Text
             tag="h2"

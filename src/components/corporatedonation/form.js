@@ -1,11 +1,24 @@
 import React, { useState } from "react";
-import { Text, Textarea, Container, Input, Icon } from "atomize";
+import { Text, Textarea, Container, Input, Icon, Button } from "atomize";
 import Formtitle from "./formtitle";
+import { useUser } from "@clerk/clerk-react/dist/hooks";
 
 const Form = () => {
     const [newitem, setitem] = useState("")
     const [newdescription, setdescription] = useState("")
     const [newlocation, setlocation] = useState("")
+
+    const { user } = useUser();
+
+    const Handlesubmit = () => {
+      const newCorporateListing = {
+        user_id: `${user.id}`,
+        item_name: `${newitem}`,
+        item_description: `${newdescription}`,
+        item_location: `${newlocation}`
+      }
+      console.log(newCorporateListing)
+    }
 
 
     console.log(newitem)
@@ -74,6 +87,11 @@ const Form = () => {
         />
       }
     />
+    <Button 
+    onClick = {Handlesubmit}
+    m={{ t: "2rem", b: { xs: "1rem", md: "0" } }}>
+      Upload Listing!
+    </Button>
 
         </Container>
         </>

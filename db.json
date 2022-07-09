@@ -2,65 +2,11 @@
   "listings": [
     {
       "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "item_name": "",
-      "item_description": "",
-      "item_location": "",
-      "id": 1
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "item_name": "sdfsdf",
-      "item_description": "sfsdds",
-      "item_location": "fsdfdsf",
-      "id": 2
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "user_type": "corporate",
-      "item_name": "sdf",
-      "item_description": "sdsdfsd",
-      "item_location": "sdfsdf",
-      "id": 3
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "user_type": "corporate",
-      "item_name": "nil",
-      "item_description": "",
-      "item_location": "",
-      "id": 4
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "user_type": "corporate",
-      "item_name": "nil",
-      "item_description": "Not Specified",
-      "item_location": "Not specified",
-      "id": 5
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "user_type": "corporate",
-      "item_name": "nil",
-      "item_description": "Not Specified",
-      "item_location": "Not specified",
-      "id": 6
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
-      "user_type": "corporate",
-      "item_name": "sdfsdf",
-      "item_description": "sdfsdftest",
-      "item_location": "sdfsdfsdfsdfdsf",
-      "id": 7
-    },
-    {
-      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
       "user_type": "personal",
-      "item_name": "fsdf",
-      "item_description": "sdfgdsf",
-      "item_location": "dsfsdf",
-      "id": 8
+      "item_name": "first item",
+      "item_description": "first item",
+      "item_location": "first item",
+      "id": 1
     }
   ]
 }

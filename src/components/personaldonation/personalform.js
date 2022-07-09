@@ -4,7 +4,7 @@ import PersonalFormtitle from "./personalformtitle";
 import { useUser } from "@clerk/clerk-react/dist/hooks";
 import listingservice from "../../services/listingservice";
 import {useNavigate} from 'react-router-dom'
-const PersonalForm = () => {
+const PersonalForm = ({setallListings}) => {
     const [newitem, setitem] = useState("")
     const [newdescription, setdescription] = useState("")
     const [newlocation, setlocation] = useState("")
@@ -26,7 +26,10 @@ const PersonalForm = () => {
       return (
         listingservice
           .addNew(newCorporateListing)
-          .then(navigate('/home'))
+          .then(allListings => {
+            setallListings(allListings)
+            navigate("/home")
+          })
       )
     }
 

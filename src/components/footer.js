@@ -33,16 +33,6 @@ const Footer = () => {
           >
             A Project by Kai Xuan, Nicholas, Sutong and Wen Kai
           </Text>
-          <Text
-            tag="h2"
-            textColor="primary"
-            textWeight="400"
-            textSize="body"
-            textAlign="center"
-            m={{ b: "1rem" }}
-          >
-            Developed by Nicholas Oh
-          </Text>
           <Div d="flex" align="center" justify="center">
             {mediaLinks.map((link, index) => (
               <Anchor href={link.link} target="_blank">

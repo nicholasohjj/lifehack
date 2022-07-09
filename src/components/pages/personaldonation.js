@@ -10,14 +10,14 @@ import { Div } from "atomize";
 import Postcards from "../explorer/postcards";
 import PersonalForm from "../personaldonation/personalform";
 
-const PersonalDonation = () => {
+const PersonalDonation = ({setallListings}) => {
 
     return (
       <>
       <Div bg="background">
       <SignedIn>
       <DonationHeader/>
-      <PersonalForm />      
+      <PersonalForm setallListings = {setallListings} />      
       <Footer />
       </SignedIn>
       <SignedOut>

@@ -1,6 +1,7 @@
 // Full Screen Modal
 import React, {useState} from "react";
 import { Div, Button, Modal, Icon, Text } from "atomize";
+import { useNavigate } from "react-router-dom";
 
 const ModalSize = ({ isOpen, onClose, item }) => {
   return (
@@ -60,6 +61,7 @@ const ModalSize = ({ isOpen, onClose, item }) => {
 };
 
 const ListingModal = ({item}) => {
+    const navigate = useNavigate()
     const [showModal, setshowModal] = useState(false)
 
     return (
@@ -75,7 +77,14 @@ const ListingModal = ({item}) => {
         </Button>
         <ModalSize
           isOpen={showModal}
-          onClose={() => setshowModal(false)}
+          onClose={() => {
+            setshowModal(false)
+            setTimeout(() => {
+              navigate(`/${item.item_name}${item.item_description}`)
+
+            }, 500);
+          }}
+            
           item = {item}
         />
       </>

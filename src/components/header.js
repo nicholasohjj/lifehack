@@ -130,20 +130,7 @@ const Header = () => {
               >
                 Github
               </Anchor>
-                
-                <Button
-                onClick ={()=>navigate('/docs')}
-                m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
-
-                  bg="gray300"
-                  hoverBg="gray400"
-                  textColor="medium"
-                  w={{ xs: "100%", sm: "8.5rem" }}
-                  rounded="lg"
-                  style={{ letterSpacing: "-0.5px" }}
-                >
-                  Documentation
-                </Button>
+              
                 <Button
                 onClick ={()=>navigate('/login')}
                   bg="success700"

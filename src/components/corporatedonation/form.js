@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Text, Textarea, Container, Input, Icon, Button } from "atomize";
 import Formtitle from "./formtitle";
 import { useUser } from "@clerk/clerk-react/dist/hooks";
+import listingservice from "../../services/listingservice";
 
 const Form = () => {
     const [newitem, setitem] = useState("")
@@ -13,11 +14,17 @@ const Form = () => {
     const Handlesubmit = () => {
       const newCorporateListing = {
         user_id: `${user.id}`,
-        item_name: `${newitem}`,
-        item_description: `${newdescription}`,
-        item_location: `${newlocation}`
+        user_type: "corporate",
+        item_name: newitem ? newitem: "nil",
+        item_description: newdescription ? newdescription: "Not Specified",
+        item_location: newlocation ? newlocation: "Not specified"
       }
       console.log(newCorporateListing)
+
+      return (
+        listingservice
+          .addNew(newCorporateListing)
+      )
     }
 
 

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "/"
+const baseUrl = "http://localhost:3001/listings"
 
 const getAll = () => {
   const request = axios.get(baseUrl)
@@ -22,4 +22,4 @@ const addNew = (newListing) => {
   
 // }
 
-export default {getAll, addNew, removePerson, update}
+export default {getAll, addNew}

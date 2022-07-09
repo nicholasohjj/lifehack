@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "https://foodise-backend.herokuapp.com/"
+const baseUrl = "https://foodise-backend.herokuapp.com"
 
 const getAll = () => {
   const request = axios.get(baseUrl)

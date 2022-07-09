@@ -25,6 +25,18 @@ const Welcome = () => {
         )}
       </WithUser>
             </Text>
+            <Text
+              tag="h2"
+              textWeight="400"
+              maxW="36rem"
+              textSize="subheader"
+              textAlign="center"
+              fontFamily="primary"
+              textColor="primary"
+              m={{ b: "2.5rem" }}
+            >
+              See the following listings below and check it out!
+            </Text>
             </Container>
         </Div>
     

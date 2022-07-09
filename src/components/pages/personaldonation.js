@@ -5,7 +5,6 @@ import {
     RedirectToSignIn,
   } from "@clerk/clerk-react";
 import DonationHeader from "../explorer/explorerHeader copy";
-import Data from "../explorer/data";
 import Footer from "../footer"
 import { Div } from "atomize";
 import Postcards from "../explorer/postcards";

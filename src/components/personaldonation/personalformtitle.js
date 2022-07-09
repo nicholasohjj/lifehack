@@ -2,7 +2,7 @@ import React from "react";
 import { Div, Anchor, Icon, Button, Container, Text } from "atomize";
 import { WithUser } from "@clerk/clerk-react";
 
-const Formtitle = () => {
+const PersonalFormtitle = () => {
     return (
         <>
         <Div tag="section" p={{ t: { xs: "6rem", md: "10rem" } }}>
@@ -20,7 +20,7 @@ const Formtitle = () => {
         {(user) => (
           <div>
             {user.firstName 
-              ? `Ready to make a donation, ${user.firstName}?` 
+              ? `Ready to make a personal donation, ${user.firstName}?` 
               : "Hello there!"}
           </div>
         )}
@@ -33,4 +33,4 @@ const Formtitle = () => {
     )
 }
 
-export default Formtitle
+export default PersonalFormtitle

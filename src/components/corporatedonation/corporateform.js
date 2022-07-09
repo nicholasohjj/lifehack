@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Text, Textarea, Container, Input, Icon, Button } from "atomize";
-import Formtitle from "./formtitle";
+import Formtitle from "./corporateformtitle";
 import { useUser } from "@clerk/clerk-react/dist/hooks";
 import listingservice from "../../services/listingservice";
 import {useNavigate} from 'react-router-dom'
@@ -26,7 +26,7 @@ const Form = () => {
       return (
         listingservice
           .addNew(newCorporateListing)
-          .then(navigate('/'))
+          .then(navigate('/home'))
       )
     }
 

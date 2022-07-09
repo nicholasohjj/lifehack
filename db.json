@@ -53,6 +53,14 @@
       "item_description": "sdfsdftest",
       "item_location": "sdfsdfsdfsdfdsf",
       "id": 7
+    },
+    {
+      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
+      "user_type": "personal",
+      "item_name": "fsdf",
+      "item_description": "sdfgdsf",
+      "item_location": "dsfsdf",
+      "id": 8
     }
   ]
 }

@@ -9,17 +9,16 @@ import Data from "../explorer/data";
 import Footer from "../footer"
 import { Div } from "atomize";
 import Postcards from "../explorer/postcards";
-import Form from "../corporatedonation/corporateform";
+import PersonalForm from "../personaldonation/personalform";
 
-
-const CorporateDonation = () => {
+const PersonalDonation = () => {
 
     return (
       <>
       <Div bg="background">
       <SignedIn>
       <ExplorerHeader/>
-      <Form />      
+      <PersonalForm />      
       <Footer />
       </SignedIn>
       <SignedOut>
@@ -30,4 +29,4 @@ const CorporateDonation = () => {
     )
   }
 
-export default CorporateDonation
+export default PersonalDonation

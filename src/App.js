@@ -8,6 +8,7 @@ import CorporateDonation from "./components/pages/corporatedonation";
 import {
   ClerkProvider,
 } from "@clerk/clerk-react";
+import PersonalDonation from "./components/pages/personaldonation";
 
 const App = () => {
   const frontendApi = "clerk.quiet.tuna-4.lcl.dev"
@@ -20,7 +21,7 @@ const App = () => {
       <Route path ="/docs" element={<Docs />} />
       <Route path = "/home" element = {<ExplorerHome />} />
       <Route path = "/corporate" element = {<CorporateDonation />} />
-      <Route path = "/personal" element = {<ExplorerHome />} />
+      <Route path = "/personal" element = {<PersonalDonation />} />
 
       <Route path ="/" element ={<Frontpage/>}/>
     </Routes>

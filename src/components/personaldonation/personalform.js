@@ -39,9 +39,6 @@ const PersonalForm = ({setallListings}) => {
         <>
         <Container>
         <PersonalFormtitle />
-
-        <Text textColor="white">
-        </Text>
         <Input
         onChange = {(event) => setitem(event.target.value)}
                         m={{ t: "2rem", b: { xs: "1rem", md: "0" } }}

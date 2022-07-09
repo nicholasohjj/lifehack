@@ -20,7 +20,7 @@ const PersonalFormtitle = () => {
         {(user) => (
           <div>
             {user.firstName 
-              ? `Ready to make a personal donation, ${user.firstName}?` 
+              ? `Ready to make a donation, ${user.firstName}?` 
               : "Hello there!"}
           </div>
         )}

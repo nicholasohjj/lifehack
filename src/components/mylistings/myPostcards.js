@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import { Div, Text, Row, Col, Container, Image } from "atomize"
 import logo from "../../images/logo.png"
 import listingservice from "../../services/listingservice";
-import ListingModal from "../explorer/listingmodal";
 import { useUser } from "@clerk/clerk-react/dist/hooks/useUser";
+import MyListingModal from "./mylistingmodal";
 
 const MyPostcards = () => {
   const { user } = useUser();
@@ -68,7 +68,7 @@ const MyPostcards = () => {
                         >
                           Location: {item.item_location}
                         </Text>
-                        <ListingModal item ={item}/>
+                        <MyListingModal item ={item}/>
                       </Div>
                     </Div>
                   </Div>

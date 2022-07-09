@@ -39,23 +39,20 @@ const Welcome = () => {
             >
               See the following listings below and check it out!
             </Text>
-            <Div tag="section" id="features"
-                          flexDir={{ xs: "column", md: "row" }}
-                          p={{ t: "3rem" }}
-                          >
+
             <Button
                 onClick ={()=>navigate("/personal")}
                   bg="warning700"
                   hoverBg="warning800"
                   m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                   textColor="black"
-                  w={{ xs: "100%", sm: "11rem" }}
+                  w={{ xs: "100%", sm: "13rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
                 >
-                  Personal Donation
-                </Button>
-              <Button
+Donate your food here!
+</Button>
+              {/* <Button
                 onClick ={()=>navigate("/corporate")}
                   bg="info700"
                   hoverBg="info800"
@@ -67,8 +64,7 @@ const Welcome = () => {
                   style={{ letterSpacing: "-0.5px" }}
                 >
                   Corporate Donation
-                </Button>
-            </Div>
+                </Button> */}
             </Container>
         </Div>
     

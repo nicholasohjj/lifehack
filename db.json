@@ -27,13 +27,21 @@
     {
       "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
       "user_type": "personal",
-      "item_name": "dfsf",
-      "item_description": "sdfdsf",
-      "item_location": "dsfdsf",
+      "item_name": "Bread",
+      "item_description": "Not expired bread",
+      "item_location": "Choa Chu Kang",
       "item_reserved": true,
       "item_reserved_person": "First name Oh",
       "item_reserved_person_email": "nicholasohjj@gmail.com",
-      "id": 3
+      "id": 6
+    },
+    {
+      "user_id": "user_2BLcDgTBtHCy71JWj8YgWAyoUeF",
+      "user_type": "personal",
+      "item_name": "nil",
+      "item_description": "Not Specified",
+      "item_location": "Not specified",
+      "id": 7
     }
   ]
 }

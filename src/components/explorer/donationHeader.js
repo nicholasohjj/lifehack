@@ -134,9 +134,9 @@ const ExplorerHeader = () => {
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
                 >
-                  Personal Donation
+                  Donate your food!
                 </Button>
-              <Button
+              {/* <Button
                 onClick ={()=>navigate("/corporate")}
                   bg="info700"
                   hoverBg="info800"
@@ -147,7 +147,7 @@ const ExplorerHeader = () => {
                   style={{ letterSpacing: "-0.5px" }}
                 >
                   Corporate Donation
-                </Button>
+                </Button> */}
               <Button
                 onClick ={()=>signOut()}
                   bg="success700"

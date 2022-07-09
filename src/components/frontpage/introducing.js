@@ -1,20 +1,20 @@
 import React from "react";
-import { Div, Text, Row, Col, Container, Image, Tag } from "atomize"
+import { Div, Text, Row, Col, Container, Image, Icon, Tag } from "atomize"
 import logo from "../../images/logo.png"
 const list = [
     {
-      icon: logo,
+      icon: "Add",
       heading: "Donate",
       subheading: "Have extra food? Don't let it go to waste! Donate your food for the greater cause right now!",
     },
     {
-      icon: logo,
+      icon: "Edit",
       heading: "Request",
       subheading: "We hear you, and we are here to help. Request for any food put up for donation!",
     },
   
     {
-      icon: logo,
+      icon: "Bag",
       heading: "Earn credits",
       subheading: "Donate your food to earn credits that can be exchanged in other stores!",
     },
@@ -66,12 +66,15 @@ const Introducing = () => {
                       rounded="xl"
                     >
                       <Div flexGrow="1">
-                        <Image
-                          src={item.icon}
-                          m={{ t: "1rem", b: "2rem" }}
+                      <Icon
+          name={item.icon}
+          color="white"
+          cursor="pointer"
+          m={{ t: "1rem", b: "2rem" }}
                           w="auto"
                           h="2rem"
-                        />
+        />
+                        
                         <Text
                           textSize="title"
                           textColor="primary"

@@ -18,7 +18,7 @@ const ListingsWelcome = () => {
               textColor="primary"
               m={{ b: "2.5rem" }}
             >
-              Here are your listings
+              You may find your listings below!
             </Text>
             </Container>
         </Div>

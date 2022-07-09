@@ -120,7 +120,7 @@ const Header = () => {
                 Features
               </Anchor>
               <Anchor
-                href="https://github.com/nicholasohjj/lifehack"
+                href="https://github.com/nicholasohjj/foodise"
                 target="_blank"
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"

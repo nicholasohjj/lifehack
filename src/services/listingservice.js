@@ -17,4 +17,10 @@ const update = (id,newListing) => {
   return request.then(response=>response.data)
 }
 
-export default {getAll, addNew, update}
+const removeListing = (id) => {
+  return axios.delete(`${baseUrl}/${id}`)
+}
+
+
+
+export default {getAll, addNew, update, removeListing}

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react/dist/hooks";
 import listingservice from "../../services/listingservice";
 
-const ModalSize = ({ isOpen, onClose, item, onReserve }) => {
+const ModalSize = ({ isOpen, onClose, item, onDelete }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -54,28 +54,35 @@ const ModalSize = ({ isOpen, onClose, item, onReserve }) => {
                           textSize="paragraph"
                           m={{ b: "1rem" }}
                         >
-                          Reserve Status: {item.item_reserved ? `Item has been reserved` : "Not Reserved"} 
+                          Reserve Status: {item.item_reserved ? `Reserved by ${item.item_reserved_person} with email ${item.item_reserved_person_email}` : "Not Reserved"} 
                         </Text>
                         
       <Div d="flex" justify="flex-end">
-        {item.item_reserved ?
-                <Button onClick={onClose} bg="info700">
-                Close
-              </Button>
-              : <Button onClick={onReserve} bg="info700">
-              Reserve this item!
-            </Button>
-        }
-
+      <Button onClick={onDelete}                  
+      m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
+bg="red">
+          Delete Listing
+        </Button>
+        <Button onClick={onClose} bg="info700">
+          Reserve this item!
+        </Button>
       </Div>
     </Modal>
   );
 };
 
-const ListingModal = ({item}) => {
+const MyListingModal = ({item}) => {
   const { user } = useUser();
     console.log(user.username)
     const [showModal, setshowModal] = useState(false)
+
+    const Handledelete = () => {
+      setshowModal(!showModal)
+      listingservice
+        .removeListing(item.id)
+        .then(location.reload())
+
+    }
 
     const Handleclose = () => {
 
@@ -95,7 +102,6 @@ const ListingModal = ({item}) => {
       .update(item.id,newListing)
       .then()
           setshowModal(false)
-          location.reload()
 
 
     }
@@ -113,8 +119,8 @@ const ListingModal = ({item}) => {
         </Button>
         <ModalSize
           isOpen={showModal}
-          onReserve = {Handleclose}
-          onClose={()=> {setshowModal(false)}}
+          onClose={Handleclose}
+          onDelete={Handledelete}
             
           item = {item}
         />
@@ -122,4 +128,4 @@ const ListingModal = ({item}) => {
     );
   }
 
-export default ListingModal;
+export default MyListingModal;

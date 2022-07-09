@@ -3,13 +3,14 @@ import { Text, Textarea, Container, Input, Icon, Button } from "atomize";
 import Formtitle from "./formtitle";
 import { useUser } from "@clerk/clerk-react/dist/hooks";
 import listingservice from "../../services/listingservice";
-
+import {useNavigate} from 'react-router-dom'
 const Form = () => {
     const [newitem, setitem] = useState("")
     const [newdescription, setdescription] = useState("")
     const [newlocation, setlocation] = useState("")
 
     const { user } = useUser();
+    const navigate = useNavigate()
 
     const Handlesubmit = () => {
       const newCorporateListing = {
@@ -19,11 +20,13 @@ const Form = () => {
         item_description: newdescription ? newdescription: "Not Specified",
         item_location: newlocation ? newlocation: "Not specified"
       }
+
       console.log(newCorporateListing)
 
       return (
         listingservice
           .addNew(newCorporateListing)
+          .then(navigate('/'))
       )
     }
 

@@ -4,7 +4,7 @@ import {
     SignedOut,
     RedirectToSignIn,
   } from "@clerk/clerk-react";
-import ExplorerHeader from "../explorer/explorerHeader";
+import DonationHeader from "../explorer/explorerHeader copy";
 import Data from "../explorer/data";
 import Footer from "../footer"
 import { Div } from "atomize";
@@ -18,7 +18,7 @@ const CorporateDonation = () => {
       <>
       <Div bg="background">
       <SignedIn>
-      <ExplorerHeader/>
+      <DonationHeader/>
       <Form />      
       <Footer />
       </SignedIn>

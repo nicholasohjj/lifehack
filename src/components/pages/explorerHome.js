@@ -4,7 +4,7 @@ import {
     SignedOut,
     RedirectToSignIn,
   } from "@clerk/clerk-react";
-import ExplorerHeader from "../explorer/explorerHeader";
+import ExplorerHeader from "../explorer/donationHeader";
 import Welcome from "../explorer/welcome";
 import Data from "../explorer/data";
 import Footer from "../footer"

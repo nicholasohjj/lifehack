@@ -42,8 +42,10 @@ const DonationHeader = () => {
             <Container d="flex" align="center" justify="space-between">
             <Div cursor="pointer">
 
-            <Anchor href="/home">
+            <Anchor href="/home" >
+              <Text textSize="subheader">
               Back to Dashboard
+              </Text>
             </Anchor>
               
               
@@ -118,6 +120,7 @@ const DonationHeader = () => {
                   hoverBg="brand800"
                   m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                   textColor="black"
+                  textSize="subheader"
                   w={{ xs: "100%", sm: "11rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
@@ -130,6 +133,7 @@ const DonationHeader = () => {
                   hoverBg="warning800"
                   m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                   textColor="black"
+                  textSize="subheader"
                   w={{ xs: "100%", sm: "11rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
@@ -156,6 +160,7 @@ const DonationHeader = () => {
                   textColor="white"
                   w={{ xs: "100%", sm: "8.5rem" }}
                   rounded="lg"
+                  textSize="subheader"
                   style={{ letterSpacing: "-0.5px" }}
                 >
                   Sign Out

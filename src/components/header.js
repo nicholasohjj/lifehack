@@ -113,6 +113,7 @@ const Header = () => {
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
+                textSize="subheader"
                 hoverTextColor="black"
                 transition
                 onClick={() => scrollTo("#features")}
@@ -124,6 +125,7 @@ const Header = () => {
                 target="_blank"
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
+                textSize="subheader"
                 textColor="medium"
                 hoverTextColor="black"
                 transition
@@ -136,6 +138,7 @@ const Header = () => {
                   bg="success700"
                   hoverBg="environment"
                   textColor="white"
+                  textSize="subheader"
                   w={{ xs: "100%", sm: "8.5rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}

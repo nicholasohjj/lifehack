@@ -64,7 +64,7 @@ bg="red">
           Delete Listing
         </Button>
         <Button onClick={onClose} bg="info700">
-          Reserve this item!
+          Close
         </Button>
       </Div>
     </Modal>
@@ -85,23 +85,6 @@ const MyListingModal = ({item}) => {
     }
 
     const Handleclose = () => {
-
-      const newListing = {
-        user_id: item.user_id,
-        user_name: item.user_name,
-        user_type: item.user_type,
-        item_name: item.item_name,
-        item_image: item.item_image,
-        item_description: item.item_description,
-        item_location: item.item_location,
-        item_reserved: true,
-        item_reserved_person: user.fullName ? user.fullName : "nil",
-        item_reserved_person_email: user.emailAddresses ? user.emailAddresses[0].emailAddress : "nil"
-    }
-    setshowModal(!showModal)
-    listingservice
-      .update(item.id,newListing)
-      .then()
           setshowModal(false)
 
 

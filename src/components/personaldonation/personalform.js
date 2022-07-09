@@ -14,6 +14,7 @@ const PersonalForm = ({setallListings}) => {
 
     const Handlesubmit = () => {
       const newListing = {
+        id: `${user.id}${user.item_description}`,
         user_id: `${user.id}`,
         user_name: `${user.fullName}`,
         user_type: "personal",

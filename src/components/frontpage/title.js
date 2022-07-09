@@ -39,10 +39,11 @@ const Title = () => {
                 <a href="/login">
                 <Button
                   h="3rem"
-                  w={{ xs: "100%", sm: "11rem" }}
+                  w={{ xs: "100%", sm: "13rem" }}
                   bg="success700"
                   hoverBg="environment"
                   rounded="lg"
+                  textSize="subheader"
                   m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
                 >
                   <SignedIn>

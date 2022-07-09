@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
-import { Div, Text, Row, Col, Container, Image, Tag } from "atomize"
+import { Div, Text, Row, Col, Container, Image } from "atomize"
 import logo from "../../images/logo.png"
 import listingservice from "../../services/listingservice";
+import ListingModal from "./listingmodal";
 
 const Postcards = () => {
   const [listings, setlistings] = useState([])
@@ -62,6 +63,7 @@ const Postcards = () => {
                         >
                           Location: {item.item_location}
                         </Text>
+                        <ListingModal item ={item}/>
                       </Div>
                     </Div>
                   </Div>

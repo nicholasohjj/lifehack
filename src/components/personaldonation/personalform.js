@@ -13,19 +13,20 @@ const PersonalForm = ({setallListings}) => {
     const navigate = useNavigate()
 
     const Handlesubmit = () => {
-      const newCorporateListing = {
+      const newListing = {
         user_id: `${user.id}`,
+        user_name: `${user.fullName}`,
         user_type: "personal",
         item_name: newitem ? newitem: "nil",
         item_description: newdescription ? newdescription: "Not Specified",
         item_location: newlocation ? newlocation: "Not specified"
       }
 
-      console.log(newCorporateListing)
+      console.log(newListing)
 
       return (
         listingservice
-          .addNew(newCorporateListing)
+          .addNew(newListing)
           .then(allListings => {
             setallListings(allListings)
             navigate("/home")

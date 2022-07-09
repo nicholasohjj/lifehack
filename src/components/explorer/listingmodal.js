@@ -26,7 +26,7 @@ const ModalSize = ({ isOpen, onClose, item, onReserve }) => {
       />
 
         <Text
-                          textSize="subheader"
+                          textSize="heading"
                           textColor="black"
                           m={{ b: "2rem" }}
                         >
@@ -34,24 +34,30 @@ const ModalSize = ({ isOpen, onClose, item, onReserve }) => {
                         </Text>
                         <Image src={item.item_image} maxH="20rem" maxW ="20rem"
 />
-
+<Text
+                          textColor="black"
+                          textSize="subheader"
+                          m={{ b: "1rem" }}
+                        >
+                          Posted by: {item.user_name}
+                        </Text>
                         <Text
                           textColor="black"
-                          textSize="paragraph"
+                          textSize="subheader"
                           m={{ b: "1rem" }}
                         >
                           Description: {item.item_description}
                         </Text>
                         <Text
                           textColor="black"
-                          textSize="paragraph"
+                          textSize="subheader"
                           m={{ b: "1rem" }}
                         >
                           Location: {item.item_location}
                         </Text>
                         <Text
                           textColor="black"
-                          textSize="paragraph"
+                          textSize="subheader"
                           m={{ b: "1rem" }}
                         >
                           Reserve Status: {item.item_reserved ? `Item has been reserved` : "Not Reserved"} 
@@ -82,6 +88,7 @@ const ListingModal = ({item}) => {
       const newListing = {
         user_id: item.user_id,
         user_type: item.user_type,
+        user_name: item.user_name,
         item_name: item.item_name,
         item_image: item.item_image,
         item_description: item.item_description,

@@ -88,6 +88,7 @@ const MyListingModal = ({item}) => {
 
       const newListing = {
         user_id: item.user_id,
+        user_name: item.user_name,
         user_type: item.user_type,
         item_name: item.item_name,
         item_image: item.item_image,

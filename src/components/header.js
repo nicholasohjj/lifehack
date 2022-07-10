@@ -143,7 +143,7 @@ const Header = () => {
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
                 >
-                  <SignedIn>Dashboard</SignedIn>
+                  <SignedIn>Marketplace</SignedIn>
                   <SignedOut>Sign In</SignedOut>
                 </Button>
             </Div>

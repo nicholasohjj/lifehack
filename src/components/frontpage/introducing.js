@@ -16,7 +16,7 @@ const list = [
     {
       icon: "Bag",
       heading: "Earn credits",
-      subheading: "Donate your food to earn credits that can be exchanged in other stores!",
+      subheading: "Donate your food to earn credits that can be spent in our participating stores.",
     },
   
     
@@ -34,7 +34,7 @@ const Introducing = () => {
             fontFamily="primary"
             m={{ b: "1rem" }}
           >
-            What is foodise?
+            Food wastage in Singapore
           </Text>
           <Text
             textSize="subheader"
@@ -43,7 +43,7 @@ const Introducing = () => {
             maxW="30rem"
             m={{ b: "3rem" }}
           >
-            foodise is a free to use bulletin board for food donors and receivers. Do you know that food waste is one of the biggest waste streams in Singapore? Around 2 bowls of rice person are wasted daily. The second best strategy to reduce food wastage is by redistributing excess food. Contribute to this great cause now by donating your excess food!
+            Do you know that food waste accounts for 12 per cent of total waste generated in Singapore? Every day, 2 bowls of rice are wasted per person, and this number is on a rise. If you find yourself having excess food that you cannot finish, donate your food to those in need!
 
           </Text>
           <Div

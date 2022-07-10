@@ -37,7 +37,7 @@ const Welcome = () => {
               textColor="primary"
               m={{ b: "2.5rem" }}
             >
-              See the following listings below and check it out!
+              Check out the food listings below! Click on the listing to reserve it.
             </Text>
 
             <Button

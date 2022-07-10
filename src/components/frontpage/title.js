@@ -28,7 +28,7 @@ const Title = () => {
               textColor="primary"
               m={{ b: "2.5rem" }}
             >
-              "Making the wise decision about your extra food."
+              Making the wise decision about your extra food.
             </Text>
             <Div
               d="flex"
@@ -47,7 +47,7 @@ const Title = () => {
                   m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
                 >
                   <SignedIn>
-                    Go to Dashboard
+                    Go to Marketplace
                   </SignedIn>
                   <SignedOut>
                     Get Started

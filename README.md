@@ -1,7 +1,8 @@
 <p align="center">
   <a href="https://foodise.vercel.app">
-    <img alt="Fiber" height="125" src="./src/images/logo.png">
+    <img alt="foodise" height="125" src="./src/images/logo.png">
   </a>
+  <h1 align="center">foodies</h1>
   <br>
   
 <p align="center">

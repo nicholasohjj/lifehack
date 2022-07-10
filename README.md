@@ -5,7 +5,7 @@
   <h1 align="center">foodies</h1>
   <br>
 
-![Homepage]("images/screenshot_1.png")
+![Homepage](images/screenshot_1.png)
 
 <p align="center">
 <b>foodise</b> is a marketplace that attempts to tackle growing food wastage and cut down on unnecessary food wastage. It is developed as part of <a href="https://lifehack.nuscomputing.com/">NUS LifeHack 2022</a>.

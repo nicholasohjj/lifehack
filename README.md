@@ -12,11 +12,13 @@
 <b>foodise</b> is a marketplace that attempts to tackle growing food wastage and cut down on unnecessary food wastage. It is developed as part of <a href="https://lifehack.nuscomputing.com/">NUS LifeHack 2022</a>.
 </p>
 
+
 ## ⚡️ Quickstart
 
 
-
 To view a demo of the marketplace, you can visit our website [here]("https://foodise.vercel.app").
+
+![Homepage](images/screenshot_2.png)
 
 Alternatively, you can install a local version on your system by cloning the project and following the steps below
 

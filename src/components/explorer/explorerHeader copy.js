@@ -43,9 +43,7 @@ const DonationHeader = () => {
             <Div cursor="pointer">
 
             <Anchor href="/home" >
-              <Text textSize="subheader">
               Back to Dashboard
-              </Text>
             </Anchor>
               
               

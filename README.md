@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://foodise.vercel.app/"><img src=images/logo.png alt="foodise" width="200"></a>
+  <a href="https://foodise.vercel.app/"><img src="images/logo.png" alt="foodise" width="200"></a>
   <br>
     foodise
   <br>

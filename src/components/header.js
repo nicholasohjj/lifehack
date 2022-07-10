@@ -41,7 +41,7 @@ const Header = () => {
             <Image
                 src={logo}
                 alt="atomize design system logo"
-                h="60px"
+                maxH="40px"
                 w="auto"
               />
             

@@ -46,7 +46,8 @@ const Welcome = () => {
                   hoverBg="warning800"
                   m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                   textColor="black"
-                  w={{ xs: "100%", sm: "13rem" }}
+                  textSize="subheader"
+                  w={{ xs: "100%", sm: "15rem" }}
                   rounded="lg"
                   style={{ letterSpacing: "-0.5px" }}
                 >

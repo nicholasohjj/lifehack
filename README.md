@@ -1,11 +1,11 @@
-<p align="center">
-  <a href="https://foodise.vercel.app">
-    <img alt="foodise" height="125" src="./src/images/logo.png">
-  </a>
-  <h1 align="center">foodies</h1>
+<h1 align="center">
   <br>
+  <a href="https://foodise.vercel.app/"><img src=images/logo.png alt="foodise" width="200"></a>
+  <br>
+    foodise
+  <br>
+</h1>
 
-![Homepage](images/screenshot_1.png)
 
 <p align="center">
 <b>foodise</b> is a marketplace that attempts to tackle growing food wastage and cut down on unnecessary food wastage. It is developed as part of <a href="https://lifehack.nuscomputing.com/">NUS LifeHack 2022</a>.

@@ -48,7 +48,7 @@ const MyPostcards = () => {
                       <Div flexGrow="1">
                       <Image src={item.item_image} />
                         <Text
-                          textSize="subheader"
+                          textSize="heading"
                           textColor="primary"
                           m={{ b: "2rem" }}
                         >
@@ -56,14 +56,14 @@ const MyPostcards = () => {
                         </Text>
                         <Text
                           textColor="primary"
-                          textSize="paragraph"
+                          textSize="subheader"
                           m={{ b: "1rem" }}
                         >
                           Description: {item.item_description}
                         </Text>
                         <Text
                           textColor="primary"
-                          textSize="paragraph"
+                          textSize="subheader"
                           m={{ b: "1rem" }}
                         >
                           Location: {item.item_location}
